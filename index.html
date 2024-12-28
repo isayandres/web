@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isa Campoy & Andrés Fdez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(180deg, #0077b6, #00b4d8, #fff); /* Degradado azul */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        header .social-links {
+            margin-top: 10px;
+        }
+
+        header .social-links a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        header .social-links a:hover {
+            color: #0077b6; /* Efecto hover */
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Efecto hover en las imágenes */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #0077b6;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Estilo responsivo */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery img {
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+    </style>
 </head>
 <body>
-    <img src="resources/image.jpg" width="80%"/>
+    <header>
+        <h1>Clases de Salsa</h1>
+        <h4>Estilo Los Ángeles</h4>
+        <div class="social-links">
+            <a href="https://www.instagram.com/salsa_social_con_estilo/profilecard/?igsh=MXY2Y3NuZ2FhbTk1bA==" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" width="25"> @SALSA_SOCIAL_CON_ESTILO</a>
+            <a href="https://www.facebook.com/share/Pp42aypWtzGRfAyJ/?mibextid=wwXIfr" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" width="25"> Andrés</a>
+            <a href="https://www.facebook.com/share/Pp42aypWtzGRfAyJ/?mibextid=wwXIfr" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" width="25"> Isa</a>
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="25">635807666</p>
+        </div>
+    </header>
+
+    <div class="gallery">
+        <a href="/resources/images/1.jpg" target="_blank"><img src="/resources/images/1.jpg" alt="Clases de Salsa 1"></a>
+        <a href="/resources/images/2.jpg" target="_blank"><img src="/resources/images/2.jpg" alt="Clases de Salsa 2"></a>
+        <a href="/resources/images/3.jpg" target="_blank"><img src="/resources/images/3.jpg" alt="Clases de Salsa 3"></a>
+        <a href="/resources/images/4.jpg" target="_blank"><img src="/resources/images/4.jpg" alt="Clases de Salsa 4"></a>
+        <a href="/resources/images/5.jpg" target="_blank"><img src="/resources/images/5.jpg" alt="Clases de Salsa 5"></a>
+        <a href="/resources/images/6.jpg" target="_blank"><img src="/resources/images/6.jpg" alt="Clases de Salsa 6"></a>
+        <a href="/resources/images/7.jpg" target="_blank"><img src="/resources/images/7.jpg" alt="Clases de Salsa 7"></a>
+        <a href="/resources/images/8.jpg" target="_blank"><img src="/resources/images/8.jpg" alt="Clases de Salsa 8"></a>
+    </div>
+
+    <footer>
+        <p>C/ San Isidro Labrador 29, 1º 16</p>
+        <p>El Parador de las Hortichuelas</p>
+    </footer>
 </body>
 </html>
