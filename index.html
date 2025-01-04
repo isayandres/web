@@ -23,23 +23,27 @@
         header {
             position: relative;
             width: 100%;
-            height: 400px; /* Tamaño de la cabecera */
-            background-image: url('ruta-de-tu-imagen-de-fondo.jpg'); /* Imagen de fondo */
-            background-size: cover; /* Asegura que la imagen cubra toda la cabecera */
-            background-position: center; /* Centra la imagen de fondo */
+            height: 400px; /* Ajusta la altura de la cabecera */
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
             color: white;
             overflow: hidden;
+
+            /* Imagen de fondo */
+            background-image: url('resources/images/fondo cabecera.webp'); /* Ruta de la nueva imagen */
+            background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+            background-position: center; /* Centra la imagen en la cabecera */
+            background-attachment: fixed; /* Fija la imagen al fondo */
         }
 
         /* Imagen de la cabecera */
         header img {
-            width: 100%; /* La imagen de la cabecera ocupará el 100% del ancho disponible */
-            height: auto; /* Mantiene la relación de aspecto */
-            object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+            width: 100%;
+            height: 100%; /* La imagen ajusta su altura al 100% */
+            object-fit: contain; /* Mantiene la imagen en su proporción original sin recortarse */
+            z-index: 1; /* Asegura que esta imagen quede encima del fondo */
         }
 
         /* Título principal */
@@ -179,7 +183,7 @@
 </head>
 <body>
     <header>
-        <img src="resources/images/fondo cabecera.webp" alt="Imagen centro cabecera">
+        <img src="resources/images/photo.png" alt="Imagen centro cabecera">
         <h1>Isa Campoy & Andrés Fdez</h1>
         <h4>Salsa ON1. Estilo Los Ángeles</h4>
         <div class="social-links">
