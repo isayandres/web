@@ -22,12 +22,17 @@
 
         header {
             display: flex;
-            justify-content: center; /* Centrar el contenido */
+            justify-content: center;
             align-items: center;
             padding: 20px;
             text-align: center;
-            position: relative; /* Para posicionar el texto encima de las imágenes */
-            background-color: #333; /* Fondo para el header */
+            position: relative;
+            height: 500px; /* Altura fija para la cabecera */
+            background-color: #333; /* Fondo de la cabecera */
+            background-image: url('resources/images/music-background.jpg'); /* Fondo musical (puedes cambiar esta URL a una imagen que sugiera musicalidad) */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .header-images {
@@ -35,12 +40,16 @@
             justify-content: space-between;
             width: 100%;
             max-width: 1200px; /* Máximo tamaño de las imágenes */
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .header-images img {
-            width: auto; /* Mantener el tamaño original de la imagen */
-            max-height: 400px; /* Altura máxima de las imágenes */
-            object-fit: contain; /* Asegura que las imágenes no se deformen */
+            width: 45%; /* Las imágenes cubren aproximadamente el 45% del ancho total */
+            height: 100%; /* Las imágenes se ajustan a la altura de la cabecera */
+            object-fit: cover; /* Asegura que las imágenes cubran todo el espacio sin deformarse */
         }
 
         header h1 {
@@ -48,9 +57,9 @@
             font-size: 50px;
             font-weight: bold;
             color: #fff;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
             position: absolute;
-            top: 20px; /* Posiciona el texto sobre las imágenes */
+            top: 20px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -61,7 +70,7 @@
             color: #fff;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
             position: absolute;
-            top: 100px; /* Posiciona el subtítulo debajo del título */
+            top: 100px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -149,11 +158,11 @@
         /* Estilo responsivo para dispositivos móviles */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 40px; /* Reducir tamaño de fuente en móvil */
+                font-size: 40px;
             }
 
             header h4 {
-                font-size: 18px; /* Reducir subtítulo */
+                font-size: 18px;
             }
 
             .dropdown {
@@ -170,12 +179,12 @@
             }
 
             .header-images {
-                flex-direction: column; /* Cambiar a disposición vertical en pantallas pequeñas */
+                flex-direction: column;
                 align-items: center;
             }
 
             .header-images img {
-                max-width: 90%; /* Ajustar el tamaño de las imágenes en dispositivos móviles */
+                max-width: 90%;
                 margin-bottom: 10px;
             }
         }
