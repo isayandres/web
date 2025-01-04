@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Isa Campoy y Andrés Fdez, expertos en Salsa ON1 Estilo Los Ángeles. Encuentra información sobre clases y eventos.">
+    <meta name="keywords" content="Salsa, Isa Campoy, Andrés Fdez, danza, ON1, estilo Los Ángeles, eventos, clases, Roquetas">
+    <meta name="author" content="Isa Campoy & Andrés Fdez">
+    <title>Isa Campoy & Andrés Fdez</title>
+
+    <!-- Fuente personalizada -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Great Vibes', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            height: 500px; /* Altura fija para la cabecera */
+            background-color: #333; /* Fondo de la cabecera */
+            background-image: url('resources/images/music-background.jpg'); /* Fondo musical (puedes cambiar esta URL a una imagen que sugiera musicalidad) */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .header-images {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px; /* Máximo tamaño de las imágenes */
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .header-images img {
+            width: 45%; /* Las imágenes cubren aproximadamente el 45% del ancho total */
+            height: 100%; /* Las imágenes se ajustan a la altura de la cabecera */
+            object-fit: cover; /* Asegura que las imágenes cubran todo el espacio sin deformarse */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        header h4 {
+            margin: 10px 0;
+            font-size: 22px;
+            color: #fff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .social-links {
+            margin-top: 10px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dropdown {
+            margin: 10px 20px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .dropdown img {
+            width: 40px;
+            margin: 5px;
+            vertical-align: middle;
+        }
+
+        .dropdown-links {
+            margin-top: 5px;
+            text-align: left;
+        }
+
+        .dropdown-links a {
+            display: block;
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #f0eded;
+            color: #001bb6;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .dropdown-links a:hover {
+            background-color: #00b4d8;
+            color: #fff;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .gallery a:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #0077b6;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Estilo responsivo para dispositivos móviles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 40px;
+            }
+
+            header h4 {
+                font-size: 18px;
+            }
+
+            .dropdown {
+                display: block;
+                margin: 15px auto;
+            }
+
+            .dropdown img {
+                width: 30px;
+                margin-bottom: 10px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .header-images {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-images img {
+                max-width: 90%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-images">
+            <img src="resources/images/photo.png" alt="Imagen Izquierda">
+            <img src="resources/images/photo 2.jpg" alt="Imagen Derecha">
+        </div>
+        <h1>Isa Campoy & Andrés Fdez</h1>
+        <h4>Salsa ON1. Estilo Los Ángeles</h4>
+        <div class="social-links">
+            <div class="dropdown">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+                <div class="dropdown-links">
+                    <a href="https://www.instagram.com/salsa_social_con_estilo" target="_blank">@salsa_social_con_estilo</a>
+                    <a href="https://www.instagram.com/andresfdezgarcia" target="_blank">@andresfdezgarcia</a>
+                    <a href="https://www.instagram.com/campoy_isa" target="_blank">@campoy_isa</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook">
+                <div class="dropdown-links">
+                    <a href="https://www.facebook.com/share/FZXXTTsWajCgweha/?mibextid=wwXIfr" target="_blank">Andrés Fdez</a>
+                    <a href="https://www.facebook.com/isa.campoy" target="_blank">Isa Campoy</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                <div class="dropdown-links">
+                    <a href="https://chat.whatsapp.com/F5CpMZAEDtVBZVftFbhdjj" target="_blank">Eventos y talleres</a>
+                    <a href="https://wa.me/34635807666" target="_blank">Información clases: 635807666</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="gallery">
+        <a href="resources/images/1.jpg"><img src="resources/images/1.jpg" alt="Imágen 1"></a>
+        <a href="resources/images/2.jpg"><img src="resources/images/2.jpg" alt="Imágen 2"></a>
+        <a href="resources/images/3.jpg"><img src="resources/images/3.jpg" alt="Imágen 3"></a>
+        <a href="resources/images/4.jpg"><img src="resources/images/4.jpg" alt="Imágen 4"></a>
+        <a href="resources/images/7.jpg"><img src="resources/images/7.jpg" alt="Imágen 7"></a>
+    </div>
+
+    <footer>
+        <p>Arte 16 - Roquetas</p>
+        <p>C/ San Isidro Labrador 29, 1º 16</p>
+        <p>El Parador de las Hortichuelas</p>
+    </footer>
+</body>
+</html>
