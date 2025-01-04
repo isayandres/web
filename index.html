@@ -21,61 +21,25 @@
         }
 
         header {
-            position: relative;
-            width: 100%;
-            height: 400px; /* Ajusta la altura de la cabecera */
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background: linear-gradient(180deg, #0077b6, #00b4d8, #504f4f);
+            padding: 20px;
             text-align: center;
-            color: white;
-            overflow: hidden;
-
-            /* Imagen de fondo */
-            background-image: url('resources/images/fondo cabecera.webp'); /* Ruta de la nueva imagen */
-            background-size: cover; /* Asegura que la imagen cubra todo el espacio */
-            background-position: center; /* Centra la imagen en la cabecera */
-            background-attachment: fixed; /* Fija la imagen al fondo */
+            border-bottom: 2px solid #fff;
         }
 
-        /* Imagen de la cabecera */
-        header img {
-            width: 100%;
-            height: 100%; /* La imagen ajusta su altura al 100% */
-            object-fit: contain; /* Mantiene la imagen en su proporción original sin recortarse */
-            z-index: 1; /* Asegura que esta imagen quede encima del fondo */
-        }
-
-        /* Título principal */
         header h1 {
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin: 0;
             font-size: 50px;
             font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            z-index: 2;
         }
 
-        /* Subtítulo */
         header h4 {
-            position: absolute;
-            top: 100px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin: 10px 0;
             font-size: 22px;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-            z-index: 2;
         }
 
         .social-links {
             margin-top: 10px;
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 2;
         }
 
         .dropdown {
@@ -133,6 +97,10 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         }
 
+        .gallery a:hover {
+            opacity: 0.8;
+        }
+
         footer {
             text-align: center;
             margin-top: 40px;
@@ -146,44 +114,33 @@
             margin: 5px 0;
         }
 
-        /* Estilo responsivo */
+        /* Estilo responsivo para dispositivos móviles */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 40px;
+                font-size: 40px; /* Reducir tamaño de fuente en móvil */
             }
 
             header h4 {
-                font-size: 18px;
+                font-size: 18px; /* Reducir subtítulo */
             }
 
-            .social-links {
-                margin-top: 15px;
+            .dropdown {
+                display: block;
+                margin: 15px auto;
             }
 
-            header img {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 30px;
-            }
-
-            header h4 {
-                font-size: 16px;
-            }
-
-            .social-links {
-                margin-top: 10px;
+            .dropdown img {
+                width: 30px;
+                margin-bottom: 10px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="resources/images/photo.png" alt="Imagen centro cabecera">
         <h1>Isa Campoy & Andrés Fdez</h1>
         <h4>Salsa ON1. Estilo Los Ángeles</h4>
         <div class="social-links">
