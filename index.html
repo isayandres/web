@@ -22,34 +22,26 @@
 
         header {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             padding: 20px;
             text-align: center;
-            position: relative;
-            height: 500px; /* Altura fija para la cabecera */
-            background-color: #333; /* Fondo de la cabecera */
-            background-image: url('resources/images/music-background.jpg'); /* Fondo musical (puedes cambiar esta URL a una imagen que sugiera musicalidad) */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            border-bottom: 2px solid #fff;
+            background-color: #333; /* Fondo para el header */
         }
 
         .header-images {
             display: flex;
             justify-content: space-between;
             width: 100%;
-            max-width: 1200px; /* Máximo tamaño de las imágenes */
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .header-images img {
-            width: 45%; /* Las imágenes cubren aproximadamente el 45% del ancho total */
-            height: 100%; /* Las imágenes se ajustan a la altura de la cabecera */
-            object-fit: cover; /* Asegura que las imágenes cubran todo el espacio sin deformarse */
+            max-width: 45%; /* Ajusta el ancho de las imágenes */
+            height: auto; /* Mantiene la relación de aspecto original */
+            object-fit: contain; /* Asegura que la imagen no se deforme */
         }
 
         header h1 {
@@ -57,9 +49,9 @@
             font-size: 50px;
             font-weight: bold;
             color: #fff;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
             position: absolute;
-            top: 20px;
+            top: 20px; /* Posiciona el texto sobre las imágenes */
             left: 50%;
             transform: translateX(-50%);
         }
@@ -70,7 +62,7 @@
             color: #fff;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
             position: absolute;
-            top: 100px;
+            top: 100px; /* Posiciona el subtítulo debajo del título */
             left: 50%;
             transform: translateX(-50%);
         }
@@ -158,11 +150,11 @@
         /* Estilo responsivo para dispositivos móviles */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 40px;
+                font-size: 40px; /* Reducir tamaño de fuente en móvil */
             }
 
             header h4 {
-                font-size: 18px;
+                font-size: 18px; /* Reducir subtítulo */
             }
 
             .dropdown {
@@ -178,13 +170,8 @@
                 margin-right: auto;
             }
 
-            .header-images {
-                flex-direction: column;
-                align-items: center;
-            }
-
             .header-images img {
-                max-width: 90%;
+                max-width: 90%; /* Ajustar el tamaño en dispositivos móviles */
                 margin-bottom: 10px;
             }
         }
@@ -194,7 +181,7 @@
     <header>
         <div class="header-images">
             <img src="resources/images/photo.png" alt="Imagen Izquierda">
-            <img src="resources/images/photo 2.jpg" alt="Imagen Derecha">
+            <img src="resources/images/photo.png" alt="Imagen Derecha">
         </div>
         <h1>Isa Campoy & Andrés Fdez</h1>
         <h4>Salsa ON1. Estilo Los Ángeles</h4>
