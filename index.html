@@ -26,18 +26,25 @@
             text-align: center;
             border-bottom: 2px solid #fff;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 50px;
-            font-weight: bold;
+        /* Estilos generales para el logo */
+        .logo {
+            width: 200px; /* Tamaño predeterminado del logo */
+            height: auto; /* Mantener la proporción */
         }
 
-        header h4 {
-            margin: 10px 0;
-            font-size: 22px;
+        /* Media query para dispositivos móviles */
+        @media (max-width: 768px) {
+        .logo {
+        width: 150px; /* Ajustar el tamaño del logo en pantallas más pequeñas */
+        }
         }
 
+        /* Media query para pantallas muy pequeñas (como smartphones) */
+        @media (max-width: 480px) {
+        .logo {
+        width: 120px; /* Ajustar aún más el tamaño en pantallas muy pequeñas */
+        }
+        }
         .social-links {
             margin-top: 10px;
         }
